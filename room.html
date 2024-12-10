@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Golden Hotel, luxury comfort, accommodations">
+    <meta name="description" content="Welcome to the most top-notch and extraordinary hotel in Nigeria">
+    <meta name="author" content="Oji Goddy">
+    <title>Grand Stay Hotel</title>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <style>
+        body{
+            display: grid;
+            grid-template-areas: 
+            'header' 'header' 
+            'main' 'main'
+            'footer' 'footer'
+        }
+
+        @media (max-width: 500px) {
+                        
+        }
+
+        @media (max-width: 768px) {
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logo.jpg" alt="Logo"></a>
+            <h1><div class="letter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G</div>rand &nbsp; <div class="letter">S</div>tay &nbsp; <div class="letter">H</div>otel</h1>
+            <div id="navbar">
+                <input type="checkbox" id="toggle-menu" class="toggle-menu">
+                <label for="toggle-menu" class="toggle-menu-icon">&#9776;</label>
+                <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+                </div>
+        </nav>
+     </header>
+
+     <main>
+
+     <h1 class="word">Select Your Room Type</h1>
+     
+     <aside class="container">
+        <!-- Standard Room link -->
+         <a href="rooms/standard.html" class="room-type" id="stan">
+            <h2>Standard Rooms</h2>
+            <p>Affordable and comfortable rooms ideal for solo travelers or couples.</p>
+         </a>
+
+         <!-- Suites link -->
+         <a href="rooms/suites.html" class="room-type" id="suites">
+            <h2>Suites</h2>
+            <p>Spacious suites offering a luxurious experience with separate living areas.</p>
+         </a>
+
+         <!-- Speciality room link -->
+         <a href="rooms/speciality.html" class="room-type" id="spec">
+            <h2>Speciality Rooms</h2>
+            <p>Unique rooms designed to provide special experiences and amenities.</p>
+         </a>
+    
+        </aside>
+
+        </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Grand Stay Hotel. All rights reserved.</p>
+        <div><li><a href="ts.html">Terms of services</a></li>
+        <li><a href="pp.html">Privacy policy</a></li></div>
+       </footer>
+</body>
+</html>

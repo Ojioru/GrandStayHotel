@@ -1,0 +1,525 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Global Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+
+/* Header and Navigation */
+header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    padding: 16px 0;
+}
+
+header nav h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.letter {
+    color: yellow;
+}
+
+header nav img {
+    width: 100px;
+    height: 80px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 2px solid yellow;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+header nav ul li {
+    margin: 0 16px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: yellow;
+}
+
+
+
+/* Home section */
+#home {
+    grid-area: home;
+    background: url(../img/img/hotel\ image\ front\ view.jpg) no-repeat center center/cover;
+    color: white;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+
+#home div {
+    font-size: 30px;
+}
+
+
+
+/* About */
+#about {
+    grid-area: about;
+}
+
+
+
+/* Rooms */
+#rooms {
+    grid-area: rooms;
+}
+
+
+
+/* Restuarant */
+#restuarant {
+    grid-area: restuarant;
+}
+
+
+
+/* Section */
+section{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+}
+
+section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+}
+
+section a button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+section a button:hover {
+    background-color: yellow;
+    border: none;
+}
+
+
+
+/* Contact */
+#contact {
+    grid-area: contact;
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#contact a{
+    color: white;
+}
+
+#contact a:hover {
+    color: yellow;
+}
+
+#contact img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* Footer */
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 16px 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    list-style: none;
+    padding-right: 20px;
+}
+
+footer li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer div li a:hover {
+    color: yellow;
+} 
+
+
+
+/* Other Stylings */
+/* Wave */
+.wave {
+    padding-top: 150px;
+    display: inline-flex;
+    grid-gap: 20px;
+}
+
+.square {
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: orange(246, 111, 194);
+    animation: wave 2s ease-in-out infinite;
+}
+
+.square:nth-child(1) {
+    animation-delay: 0s;
+}
+.square:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.square:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.square:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.square:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+@keyframes wave {
+    from, to {
+        transform: scale(1);
+        background-color: rgb(195, 195, 79);
+    }
+    50% {
+        transform: scale(2);
+        background-color: yellow;
+    }
+}
+
+
+
+/* Services page */
+#serve h1 {
+    padding-left: 20px;
+    font-size: 30px;
+}
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service h2 {
+    margin: 15px 0;
+}
+
+.service p {
+    padding: 0 15px 20px;
+    color: #666;
+}
+
+
+
+
+/* ROOMS */
+
+/* room types page */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.room-type {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 300px;
+    color: black;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.2s;
+    margin-bottom: 50px;
+}
+
+.room-type:hover {
+    transform: scale(1.05);
+}
+
+.word {
+    padding: 20px;
+}
+
+
+/* sub room */
+.sub-rooms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    width: 350px; 
+    border-radius: 8px;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+}
+
+.sub img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sub h3 {
+    margin: 10px 0 5px;
+}
+
+.sub p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.sub button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sub button:hover {
+    background-color: #555;
+}
+
+
+/* Hamburger icon */
+.toggle-menu {
+    display: none;
+}
+
+.toggle-menu-icon {
+    display: none;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+}
+
+/* For about page */
+
+.about {
+    padding: 50px;
+}
+
+
+
+/* For gallery page */
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 50px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 300px;
+    height: 200px;
+}
+
+
+
+/* FOR BOOKING PAGE */
+
+.book {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    color: black;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+.note {
+    text-align: justify;
+}
+
+
+/* FOR RESTUARANT PAGE */
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.restaurant-intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu {
+    margin: 20px 0;
+}
+
+.menu-category {
+    margin-bottom: 20px;
+}
+
+.menu-category h3 {
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 5px;
+}
+
+.menu-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-category ul li {
+    padding: 5px 0;
+}
+
+.reservation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btns {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btns:hover {
+    background-color: #FFC107;
+}
+
+
+
+
+
+
