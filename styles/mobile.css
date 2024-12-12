@@ -29,7 +29,10 @@
 
 
 @media (max-width: 500px) {
-
+nav a img{
+    width:80px;
+    height:50px;
+}
 }
 
 
