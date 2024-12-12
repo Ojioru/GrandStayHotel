@@ -1,0 +1,23 @@
+/* Main Content */
+section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+section ol {
+    margin-left: 1.5rem;
+}
+
+section li {
+    margin-bottom: 1rem;
+}
+
+section ul {
+    margin-left: 1.5rem;
+    list-style-type: disc;
+}
+
+section ul li {
+    margin-bottom: 0.5rem;
+}
